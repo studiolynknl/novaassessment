@@ -25,6 +25,6 @@ Import this repository in Vercel. It detects Next.js on its own: keep the defaul
 
 ## Notes
 
-- With `prefers-reduced-motion`, the page has no loader and no motion. Add `?motion=on` to the URL to show the animations anyway.
+- The loader always plays. With `prefers-reduced-motion`, the scroll and hover animations are switched off. Add `?motion=on` to the URL to show them anyway.
 - The booking demo does not send or store any data.
 - GSAP is used under the GreenSock Standard License (https://gsap.com/standard-license/).

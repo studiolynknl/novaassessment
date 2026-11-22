@@ -77,12 +77,9 @@ export default function Home() {
                 <img data-hero-img="" src="/assets/hero.webp" alt="Twee vrouwen wandelen samen over een pad langs het water" fetchPriority="high" />
               </div>
               <div className="lens" data-lens="" aria-hidden="true">
-                <div className="lens-inner" data-lens-inner="">
-                  <div className="lens-glass arc"></div>
-                  <div className="lens-sheen arc"></div>
-                  <div className="lens-prism arc"></div>
-                </div>
+                <div className="lens-inner arc" data-lens-inner=""></div>
               </div>
+              <div className="hero-crown" aria-hidden="true"></div>
             </div>
           </figure>
         </section>
@@ -165,6 +162,10 @@ export default function Home() {
             <svg className="route" aria-hidden="true" width="150" height="270">
               <path data-route="" d="M0 268 C62 268 92 248 98 200 C104 150 92 100 96 64 C100 22 118 1 150 1"></path>
             </svg>
+            {/* Mobile: the same route runs vertically from the goal photo down to the practice photo. */}
+            <svg className="route-v" data-route-v-svg="" aria-hidden="true" width="80" height="140" viewBox="0 0 80 140" preserveAspectRatio="none">
+              <path data-route-v="" pathLength="1" vectorEffect="non-scaling-stroke" d="M64 1 C64 52 16 52 16 70 C16 88 64 88 64 139"></path>
+            </svg>
             <figure className="spread-main">
               <div className="story-frame" data-story-frame="">
                 <img data-parallax="" data-story-img="" src={STORIES[0].img} alt={STORIES[0].alt} loading="lazy" />
@@ -225,7 +226,6 @@ export default function Home() {
 
         {/* 07 Volgende stap */}
         <section id="contact" className="closing" data-closing="" aria-labelledby="slot-titel">
-          <div className="closing-arc arc" data-closing-arc="" aria-hidden="true"></div>
           <div className="container">
             <div className="signature arc" data-signature="" aria-hidden="true"></div>
             <h2 id="slot-titel" data-reveal="">Jouw volgende stap<br />begint hier.</h2>
